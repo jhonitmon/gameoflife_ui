@@ -40,6 +40,7 @@ private:
     int matrix[HEIGHT][WIDTH] = {}; // matrix containing the values
     int iter = 0; // current iteration
     int n_cells = 0; // number of active cells
+    int n_cells_old = 0; // n_cells of previous iteration
     int rel_height = HEIGHT / 2 - 1; // relative height
     double speed = 0.05; // iteration pause time in ms
     bool paused = true; // bool to check if game is paused

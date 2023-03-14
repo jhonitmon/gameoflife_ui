@@ -241,7 +241,7 @@ void MainWindow::on_btn_reset_clicked()
     ui->l_iter->setText(QString::number(iter));
     memset(matrix, 0, sizeof(matrix));
     ui->box_start->setEnabled(true);
-    ui->l_active_cells->setText(QString::number(iter));
+    ui->l_active_cells->setText(QString::number(n_cells));
     showPreview(ui->box_start->currentText(), false);
     ui->btn_reset->setEnabled(false);
 }
